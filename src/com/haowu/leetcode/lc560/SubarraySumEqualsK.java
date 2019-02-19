@@ -1,8 +1,6 @@
 package com.haowu.leetcode.lc560;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 /**
@@ -13,20 +11,16 @@ import java.util.Map;
  */
 public class SubarraySumEqualsK {
     public int subarraySum(int[] nums, int k) {
-        Map<Integer, List<Integer>> map = new HashMap<>();
-        List<Integer> list = new ArrayList<>();
-        list.add(0);
-        map.put(0, list);
+        Map<Integer, Integer> map = new HashMap<>();
+        map.put(0, 1);
         int sum = 0;
         int ret = 0;
-        for(int i = 1; i <= nums.length; ++i) {
-            sum += nums[i-1];
+        for(int num : nums) {
+            sum += num;
             if(map.containsKey(sum-k)) {
-                ret += map.get(sum-k).size();
+                ret += map.get(sum-k);
             }
-            List<Integer> value = map.getOrDefault( sum, new ArrayList<>() );
-            value.add(i);
-            map.put( sum, value );
+            map.put( sum, map.getOrDefault( sum, 0 ) + 1 );
         }
         return ret;
     }
