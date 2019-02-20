@@ -1,11 +1,10 @@
 package com.haowu.leetcode.lc426;
 
-import static com.haowu.leetcode.lc426.ConvertBinarySearchTreeToSortedDoublyLinkedList.Node;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNull;
 
+import com.haowu.leetcode.model.Node;
 import org.junit.jupiter.api.Test;
-
 import java.util.ArrayList;
 import java.util.List;
 

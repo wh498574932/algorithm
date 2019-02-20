@@ -1,5 +1,6 @@
 package com.haowu.leetcode.lc253;
 
+import com.haowu.leetcode.model.Interval;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.PriorityQueue;
@@ -21,18 +22,5 @@ public class MeetingRoomsII {
             priorityQueue.offer(interval);
         }
         return priorityQueue.size();
-    }
-
-    /**
-     * Utility Class For Compiling Purpose
-     */
-    static class Interval {
-        int start;
-        int end;
-
-        Interval(int start, int end) {
-            this.start = start;
-            this.end = end;
-        }
     }
 }

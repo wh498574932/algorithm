@@ -1,5 +1,6 @@
 package com.haowu.leetcode.lc426;
 
+import com.haowu.leetcode.model.Node;
 import java.util.Stack;
 
 /**
@@ -49,19 +50,5 @@ public class ConvertBinarySearchTreeToSortedDoublyLinkedList {
         pre.right = head;
         head.left = pre;
         return head;
-    }
-
-    static class Node {
-        int val;
-        Node left;
-        Node right;
-
-        Node() {}
-
-        Node(int _val,Node _left,Node _right) {
-            val = _val;
-            left = _left;
-            right = _right;
-        }
     }
 }

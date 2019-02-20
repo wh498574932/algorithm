@@ -1,8 +1,8 @@
 package com.haowu.leetcode.lc253;
 
-import static com.haowu.leetcode.lc253.MeetingRoomsII.Interval;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+import com.haowu.leetcode.model.Interval;
 import org.junit.jupiter.api.Test;
 
 public class MeetingRoomsIITest {

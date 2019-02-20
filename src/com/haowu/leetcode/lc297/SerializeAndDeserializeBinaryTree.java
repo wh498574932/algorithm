@@ -1,5 +1,6 @@
 package com.haowu.leetcode.lc297;
 
+import com.haowu.leetcode.model.TreeNode;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -52,15 +53,6 @@ public class SerializeAndDeserializeBinaryTree {
             node.left = construct(strs, res);
             node.right = construct(strs, res);
             return node;
-        }
-    }
-
-    static class TreeNode {
-        int val;
-        TreeNode left, right;
-
-        TreeNode(int val) {
-            this.val = val;
         }
     }
 }
