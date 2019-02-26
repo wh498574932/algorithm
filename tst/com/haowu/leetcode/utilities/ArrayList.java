@@ -10,13 +10,13 @@ public class ArrayList {
 
     /**
      * Create An {@code ArrayList} of {@code T} for given array.
-     * @param ts array of {@code T}.
+     * @param t array of {@code T}.
      * @param <T> {@code T}
      * @return {@code List} of {@code T}.
      */
-    public static <T> List<T> createArrayList(T[] ts) {
+    public static <T> List<T> createArrayList(T... t) {
         List<T> list = new java.util.ArrayList<>();
-        Collections.addAll(list, ts);
+        Collections.addAll(list, t);
         return list;
     }
 }
