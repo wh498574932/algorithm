@@ -14,6 +14,8 @@ package com.wh498574932.algorithm.lc278;
  * https://leetcode.com/problems/first-bad-version/
  *
  * Accepted	11 ms (99.93%)	34.4 MB (52.72%)
+ *
+ * Jan 28th, 2019 - FB - PS
  */
 public class FirstBadVersion {
     public int firstBadVersion(int n) {
