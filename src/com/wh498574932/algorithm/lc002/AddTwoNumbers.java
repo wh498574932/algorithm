@@ -7,6 +7,12 @@ import com.wh498574932.algorithm.model.ListNode;
  * order and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.
  *
  * You may assume the two numbers do not contain any leading zero, except the number 0 itself.
+ *
+ * Time:    19 ms   99.37%  O(N)
+ *
+ * Space:   48.5 MB 5.08%   O(1)
+ *
+ * https://leetcode.com/problems/add-two-numbers/
  */
 public class AddTwoNumbers {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
