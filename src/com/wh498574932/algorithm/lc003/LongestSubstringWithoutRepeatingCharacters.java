@@ -6,8 +6,8 @@ import java.util.Set;
 /**
  * Given a string, find the length of the longest substring without repeating characters.
  *
- * Time:    14 ms       89.56%
- * Space:   37.9 MB     39.63%
+ * Time:    14 ms       89.56%      O(N)
+ * Space:   37.9 MB     39.63%      O(N)
  *
  * https://leetcode.com/problems/longest-substring-without-repeating-characters/
  */
