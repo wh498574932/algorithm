@@ -3,6 +3,9 @@ package com.wh498574932.algorithm.airbnb;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Implement a queue with a number of arrays, in which each array has fixed size.
+ */
 public class ImplementQueueWithFixedSizeArrayList {
     private int arraySize;
     private int size;
