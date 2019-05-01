@@ -23,7 +23,7 @@ import java.util.List;
  * ]
  *
  * Time:        32 ms       85.09%      O(N^2)
- * Space:       48.6 MB     61.44%      O(1)
+ * Space:       48.6 MB     61.44%      O(N)
  *
  * https://leetcode.com/problems/3sum/
  */
