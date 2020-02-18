@@ -14,6 +14,9 @@ package com.wh498574932.algorithm.lc157;
  * https://leetcode.com/problems/read-n-characters-given-read4/
  */
 public class ReadNCharactersGivenRead4 extends Reader4 {
+    public ReadNCharactersGivenRead4(char[] content) {
+        setContents(content);
+    }
 
     /**
      * @param buf Destination buffer
@@ -21,13 +24,16 @@ public class ReadNCharactersGivenRead4 extends Reader4 {
      * @return The number of characters read
      */
     public int read(char[] buf, int n) {
-        if(buf == null || buf.length < 1) { return 0; }
-        if(n <= buf.length) { return n; }
-        setContents(buf);
-        int val = read4(buf);
-        if(val < 4) { return val; }
-        char[] newBuf = new char[buf.length-4];
-        System.arraycopy(buf, 4, newBuf, 0, buf.length-4);
-        return val + read(newBuf, n - val);
+        if(n == 0) { return 0; }
+        int readPos = 0;
+        while(readPos < n) {
+            char[] buffer = new char[4];
+            int read = read4(buffer);
+            int len = Math.min(n - readPos, read);
+            System.arraycopy(buffer, 0, buf, readPos, len);
+            readPos += len;
+            if(read < 4 && readPos < n) { break; }
+        }
+        return readPos;
     }
 }
